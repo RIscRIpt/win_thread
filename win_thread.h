@@ -163,7 +163,7 @@ namespace win {
             std::apply(pw->function_, pw->arguments_);
             return 0;
         } else {
-            return std::apply(t.function_, t.arguments_);
+            return std::apply(pw->function_, pw->arguments_);
         }
     }
 
